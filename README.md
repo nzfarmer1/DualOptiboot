@@ -8,23 +8,23 @@ Assumes location is /Applications/Arduino.app/Contents/Java/hardware/Moteino/avr
 Changes:
 * Rename PROGRAM to preserve case
 
- <code>
+ <pre>
 -PROGRAM    = optiboot
 +PROGRAM = Optiboot
-</code>
+</pre>
 
 * Specify location of avr-gcc  
 
-<code>
+<pre>
 +GCCROOT =../../../../tools/avr/bin/
-</code>
+</pre>
 
 * Remove reference to short_calls parameter
 
-<code>
+<pre>
 -OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
 +OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
-</code>
+</pre>
 
 
 Note: you need to copy/link boot.h and stk500.h from default bootloaders folder, or include folder with -I
