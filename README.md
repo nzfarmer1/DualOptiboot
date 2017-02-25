@@ -1,7 +1,7 @@
 DualOptiboot
 ============
 
-Forked from https://github.com/LowPowerLab/DualOptiboot to compile on OSX with gcc 4.8.1
+Forked from https://github.com/LowPowerLab/DualOptiboot to compile on OSX with avr-gcc 4.8.1
 
 Assumes location is /Applications/Arduino.app/Contents/Java/hardware/Moteino/avr/bootloaders[/DualOptiboot]
 
