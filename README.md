@@ -1,6 +1,25 @@
 DualOptiboot
 ============
 
+Forked from https://github.com/LowPowerLab/DualOptiboot to compile on OSX with gcc 4.8.1
+
+Assumes location is /Applications/Arduino.app/Contents/Java/hardware/Moteino/avr/bootloaders[/DualOptiboot]
+
+Changes:
+
+* Rename PROGRAM to preserve case
+-PROGRAM    = optiboot
++PROGRAM = Optiboot
+
+* Specify location of avr-gcc -  
++GCCROOT =../../../../tools/avr/bin/
+
+* Remove reference to short_calls parameter
+-OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
++OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
+
+-------------------------------------------------------------------------------------------------------------
+
 Custom Optiboot to add wireless programming capability to Moteino
 Copyright Felix Rusu (2013-2014), felix@lowpowerlab.com
 More at: http://lowpowerlab.com/Moteino

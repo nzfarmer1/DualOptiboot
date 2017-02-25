@@ -33,7 +33,7 @@
 #----------------------------------------------------------------------
 #
 # program name should not be changed...
-PROGRAM    = optiboot
+PROGRAM    = Optiboot
 
 # The default behavior is to build using tools that are in the users
 # current path variables, but we can also build using an installed
@@ -90,7 +90,7 @@ GCCROOT = $(TOOLROOT)/avr/bin/
 AVRDUDE_CONF = -C$(TOOLROOT)/avr/etc/avrdude.conf
 
 else
-GCCROOT =
+GCCROOT =../../../../tools/avr/bin/
 AVRDUDE_CONF =
 endif
 
@@ -103,7 +103,7 @@ STK500-2 = $(STK500) -d$(MCU_TARGET) -ms -q -lCF -LCF -cUSB -I200kHz -s -wt
 
 
 OBJ        = $(PROGRAM).o
-OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
+OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
 
 DEFS       = 
 LIBS       =
