@@ -7,17 +7,20 @@ Assumes location is /Applications/Arduino.app/Contents/Java/hardware/Moteino/avr
 
 Changes:
 * Rename PROGRAM to preserve case
-<code>
+
+ <code>
 -PROGRAM    = optiboot
 +PROGRAM = Optiboot
 </code>
 
-* Specify location of avr-gcc -  
+* Specify location of avr-gcc  
+
 <code>
 +GCCROOT =../../../../tools/avr/bin/
 </code>
 
 * Remove reference to short_calls parameter
+
 <code>
 -OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
 +OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
