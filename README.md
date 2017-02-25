@@ -18,6 +18,8 @@ Changes:
 -OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
 +OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
 
+Note: you need to copy/link boot.h and stk500.h from default bootloaders folder, or include folder with -I
+
 -------------------------------------------------------------------------------------------------------------
 
 Custom Optiboot to add wireless programming capability to Moteino
