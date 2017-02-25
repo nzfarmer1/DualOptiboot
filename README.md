@@ -6,17 +6,23 @@ Forked from https://github.com/LowPowerLab/DualOptiboot to compile on OSX with g
 Assumes location is /Applications/Arduino.app/Contents/Java/hardware/Moteino/avr/bootloaders[/DualOptiboot]
 
 Changes:
-
 * Rename PROGRAM to preserve case
+<code>
 -PROGRAM    = optiboot
 +PROGRAM = Optiboot
+</code>
 
 * Specify location of avr-gcc -  
+<code>
 +GCCROOT =../../../../tools/avr/bin/
+</code>
 
 * Remove reference to short_calls parameter
+<code>
 -OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types -mshort-calls
 +OPTIMIZE = -Os -fno-inline-small-functions -fno-split-wide-types 
+</code>
+
 
 Note: you need to copy/link boot.h and stk500.h from default bootloaders folder, or include folder with -I
 
